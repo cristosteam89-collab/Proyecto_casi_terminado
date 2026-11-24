@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#28180f">
+  <meta name="description" content="Cafetería y bollería Sensaciones en Potosí, Bolivia. Cafés, bollería, jugos y sándwiches.">
+  <title>Pedidos | Sensaciones</title>
+  <link rel="stylesheet" href="pedidos.css">
+</head>
+<body data-pagina="p">
+  <header class="site-header">
+    <div class="nav-container">
+      <a class="brand" href="index.html" aria-label="Sensaciones, ir al inicio">
+        <span class="brand-name"><span class="coffee-mark" aria-hidden="true">☕</span> SENSACIONES</span>
+        <span class="brand-subtitle">CAFETERÍA &amp; BOLLERÍA</span>
+      </a>
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Abrir menú">
+      <label class="mobile-toggle" for="nav-toggle" aria-hidden="true">☰</label>
+      <nav class="main-nav" id="navegacion" aria-label="Navegación principal">
+        <a href="index.html" class="">Inicio</a>
+        <a href="menu.html" class="">Menú</a>
+        <a href="pedidos.html" class="active">Pedidos</a>
+        <a href="nosotros.html" class="">Nosotros</a>
+        <a href="contactos.html" class="">Contactos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main container orders-main">
+    <div class="page-heading page-heading-left">
+      <h1>Haz tu pedido</h1>
+      <p>Elige tus favoritos y consulta disponibilidad.</p>
+    </div>
+    <div class="orders-grid">
+      <section class="cart-box" aria-labelledby="pedido-titulo">
+        <h2 id="pedido-titulo">Tu selección</h2>
+        <div id="lista-pedido" class="static-order">
+          <div class="order-line">
+            <img src="img/latte.jpg" alt="Latte">
+            <div class="order-description"><h3>Latte</h3><p>Cantidad: 1</p></div>
+            <strong class="order-price">Bs. 15</strong>
+          </div>
+          <div class="order-line">
+            <img src="img/croissant-mini.jpg" alt="Croissant">
+            <div class="order-description"><h3>Croissant</h3><p>Cantidad: 2</p></div>
+            <strong class="order-price">Bs. 16</strong>
+          </div>
+          <div class="order-line">
+            <img src="img/jugo-mini.jpg" alt="Jugo natural">
+            <div class="order-description"><h3>Jugo natural</h3><p>Cantidad: 1</p></div>
+            <strong class="order-price">Bs. 10</strong>
+          </div>
+        </div>
+        <div class="order-bottom"><span id="total-pedido">Total referencial: Bs. 41</span></div>
+      </section>
+      <aside class="order-cta">
+        <h2>¿Listo para disfrutar?</h2>
+        <p>Consulta tu pedido por nuestros canales de contacto.</p>
+        <a id="consultar-pedido" class="button button-cream button-wide" href="https://wa.me/59173334929?text=Hola%2C%20quisiera%20consultar%20este%20pedido%20de%20Sensaciones%3A%20Latte%201%2C%20Croissant%202%20y%20Jugo%20natural%201." target="_blank" rel="noopener noreferrer">CONSULTAR POR WHATSAPP</a>
+        <small>Los precios y productos son referenciales para el prototipo.</small>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer">
+    SENSACIONES · UN CAFÉ ESPECIAL PARA CADA MOMENTO
+  </footer>
+</body>
+</html>
